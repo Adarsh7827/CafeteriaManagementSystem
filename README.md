@@ -45,7 +45,7 @@ Configure Database in the Application: Update the application.properties file wi
 Run the Application:
 Open the project in IntelliJ IDEA. Run the Main class located in the controller package.
 
-# Team leader Adarsh kumar
+## Team leader Adarsh kumar
 Team member: Anshul garg and Atul kumar
 
 #Project Objective Provide a user-friendly platform for cafe and resterunt. Ensure secure database management using MySQL and JDBC. Offer dynamic features like role-based order managening and payment system.
@@ -65,5 +65,5 @@ Resources
 Languages
 Java
 100.0%
-Footer
+
 

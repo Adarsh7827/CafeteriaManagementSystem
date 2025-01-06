@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe central - Cafeteria Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img alt="a chef's hat and kitchen utensils with a ribbon in front of a brick wall" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/f8/35/19/f83519e2a7759bb0b2e6d492f490bfc8.jpg">
+                <span>Cafe Central
+                
+                </span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="menu/menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="#orders"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+                <li><a href="invent/inventory.html"><i class="fas fa-box"></i> Inventory</a></li>
+                <li><a href="#employees"><i class="fas fa-users"></i> Employees</a></li>
+                <li><a href="#reports"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                <li class="login-btn">
+                    <a href="login.html" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>        
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu" class="menu-section">
+            <h2><i class="fas fa-utensils"></i> Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img alt="a hamburger with cheese, lettuce, tomato and pickles on it sitting on a black surface" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/90/e4/82/90e4824224b82a769281ae3502e92e6c.jpg">
+                    <h3>Gourmet Burger</h3>
+                    <p class="description">Premium chicken patty with cheese, lettuce, and special sauce</p>
+                    <p class="price">$12.99</p>
+                    <button class="order-btn">Add to Order</button>
+                </div>
+                <div class="menu-item">
+                    <img alt="a bowl filled with pasta and broccoli on top of a white marble counter" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/c5/2d/45/c52d454bf256841ea8934cd3d760d7b1.jpg">
+                    <h3>Creamy Alfredo Pasta</h3>
+                    <p class="description">Fresh pasta in rich alfredo sauce with grilled chicken</p>
+                    <p class="price">$14.99</p>
+                    <button class="order-btn">Add to Order</button>
+                </div>
+                <div class="menu-item">
+                    <img alt="a bowl filled with chopped vegetables next to bowls of sauces and seasoning on the side" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/06/19/27/061927649d24bac4a5895052ce841c36.jpg">
+                    <h3>Fresh Garden Salad</h3>
+                    <p class="description">Mixed greens with seasonal vegetables and vinaigrette</p>
+                    <p class="price">$8.99</p>
+                    <button class="order-btn">Add to Order</button>
+                </div>
+                <div class="menu-item">
+                    <img alt="Story pin image" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/42/37/56/42375688f50e26ac0763250e71b059f4.jpg">
+                    <h3>Supreme Pizza</h3>
+                    <p class="description">Loaded with vegetables and premium toppings</p>
+                    <p class="price">$16.99</p>
+                    <button class="order-btn">Add to Order</button>
+                </div>
+                <div class="menu-item">
+                    <img alt="a piece of cake with chocolate frosting and two strawberries on top" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/af/25/fe/af25fee5dafd7312ec76172c6eed44e6.jpg">
+                    <h3>Chocolate Delight</h3>
+                    <p class="description">Rich chocolate cake with ice cream</p>
+                    <p class="price">$7.99</p>
+                    <button class="order-btn">Add to Order</button>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="employees" class="employees-section">
+            <h2><i class="fas fa-users"></i> Employee Management</h2>
+            <div class="employee-grid">
+                <div class="employee-card">
+                    <img alt="a man sitting at a table using a laptop computer and holding a cell phone in his hand" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/6d/8f/d6/6d8fd63031c155c76d314d8db9f8226a.jpg">
+                    <h3>Marco</h3>
+                    <p>Manager</p>
+                    <p>Status: Active</p>
+                </div>
+                <div class="employee-card">
+                    <img alt="Story pin image" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/47/0a/ee/470aee2f622fa62cc9e0b1e52b07fac0.jpg">
+                    <h3>Nico Robin</h3>
+                    <p>Manager</p>
+                    <p>Status: Active</p>
+                </div>
+                <div class="employee-card">
+                    <img alt="Jock Zonfrillo Dead: The MasterChef Australia judge has sadly died aged 46. Find out more about his death here... Chef Marco Pierre White, Marco Pierre White, Masterchef Australia, Victoria Police, Celebrity Chef, Anthony Bourdain, Nigella Lawson, Celebrity Chefs, Jamie Oliver" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/05/15/93/051593605bcec2b66cebda90b8fe320a.jpg">
+                    <h3>Jammes William</h3>
+                    <p>Head Chef</p>
+                    <p>Status: Active</p>
+                </div>
+                <div class="employee-card">
+                    <img alt="a woman wearing a chef's hat and standing with her arms crossed in front of the camera" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/10/38/10/103810ca3b9b9ce6c6b1aaa38324991d.jpg">
+                    <h3>Natasha James</h3>
+                    <p>Jr. chef</p>
+                    <p>Status: Active</p>
+                </div>
+                <div class="employee-card">
+                    <img alt="Story pin image" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/d2/19/28/d21928aea30e0cb2caa59124b374d876.jpg">
+                    <h3>Jane Smith</h3>
+                    <p>Cashier</p>
+                    <p>Status: Active</p>
+                </div>
+                <div class="employee-card">
+                    <img alt="a man holding a plate with food on it" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/da/4e/c1/da4ec14ad23ce24438df8db88917f979.jpg">
+                    <h3>Perter Joi</h3>
+                    <p>Waiter</p>
+                    <p>Status: Active</p>
+                </div>
+                <div class="employee-card">
+                    <img alt="a waitress holding two plates of food in her hands" class="hCL kVc L4E MIw" fetchpriority="auto" loading="auto" src="https://i.pinimg.com/736x/22/4b/6b/224b6ba2fc6ede709f4b29266b402855.jpg">
+                    <h3>Noile</h3>
+                    <p>Waiter</p>
+                    <p>Status: Active</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="orders" class="orders-section">
+            <h2><i class="fas fa-shopping-cart"></i> Current Orders</h2>
+            <div class="order-list">
+                <div class="order-card">
+                    <h3>Order #1234</h3>
+                    <p>2x Gourmet Burger</p>
+                    <p>1x Fresh Garden Salad</p>
+                    <p class="order-status">Status: Preparing</p>
+                    <p class="order-total">Total: $34.97</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@cafecentral.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 8:00 AM - 8:00 PM</p>
+                <p>Sat-Sun: 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cafe central. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

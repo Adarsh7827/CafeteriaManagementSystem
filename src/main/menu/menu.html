@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Central | Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome for icons -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img alt="a chef's hat and kitchen utensils with a ribbon in front of a brick wall" class="logo-img" src="https://i.pinimg.com/736x/f8/35/19/f83519e2a7759bb0b2e6d492f490bfc8.jpg">
+                <span>Cafe Central</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-utensils"></i> Home</a></li>
+                <li><a href="menu/menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="orders.html"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+                <li><a href="c:\Users\praso\Desktop\project adarsh\invent\inventory.html"><i class="fas fa-box"></i> Inventory</a></li>
+                <li><a href="employees.html"><i class="fas fa-users"></i> Employees</a></li>
+                <li><a href="reports.html"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h2 class="section-title"><i class="fas fa-utensils"></i> Our Menu</h2>
+            <div class="menu-grid">
+                <!-- Menu Item 1 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Burger" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Cheeseburger</h3>
+                        <p class="description">A delicious cheeseburger with fresh lettuce, tomato, and melted cheese.</p>
+                        <p class="price">$8.99</p>
+                        <button class="order-btn" onclick="addToCart('Cheeseburger', 8.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Pizza" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Margherita Pizza</h3>
+                        <p class="description">Classic pizza with fresh mozzarella, basil, and tomato sauce.</p>
+                        <p class="price">$10.99</p>
+                        <button class="order-btn" onclick="addToCart('Margherita Pizza', 10.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Chili Potato" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Chili Potato</h3>
+                        <p class="description">Crispy fried potatoes tossed in a spicy chili sauce.</p>
+                        <p class="price">$6.99</p>
+                        <button class="order-btn" onclick="addToCart('Chili Potato', 6.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Noodles" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Veg Noodles</h3>
+                        <p class="description">Stir-fried noodles with fresh vegetables and a savory sauce.</p>
+                        <p class="price">$7.49</p>
+                        <button class="order-btn" onclick="addToCart('Veg Noodles', 7.49)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Chocolate Cake" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Chocolate Cake</h3>
+                        <p class="description">Rich, moist chocolate cake topped with creamy frosting.</p>
+                        <p class="price">$5.99</p>
+                        <button class="order-btn" onclick="addToCart('Chocolate Cake', 5.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 6 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Gulab Jamun" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Gulab Jamun</h3>
+                        <p class="description">Sweet and sticky deep-fried dough balls soaked in syrup.</p>
+                        <p class="price">$3.99</p>
+                        <button class="order-btn" onclick="addToCart('Gulab Jamun', 3.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 7 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Veg Burger" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Veg Burger</h3>
+                        <p class="description">A hearty veg patty with fresh veggies and a savory sauce.</p>
+                        <p class="price">$7.49</p>
+                        <button class="order-btn" onclick="addToCart('Veg Burger', 7.49)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 8 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="French Fries" class="menu-img">
+                    <div class="menu-details">
+                        <h3>French Fries</h3>
+                        <p class="description">Crispy and golden fries served with ketchup.</p>
+                        <p class="price">$3.99</p>
+                        <button class="order-btn" onclick="addToCart('French Fries', 3.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 9 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Spaghetti" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Spaghetti</h3>
+                        <p class="description">Classic spaghetti in a rich tomato sauce with a sprinkle of parmesan.</p>
+                        <p class="price">$9.99</p>
+                        <button class="order-btn" onclick="addToCart('Spaghetti', 9.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 10 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Hot Dog" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Hot Dog</h3>
+                        <p class="description">Grilled hot dog with ketchup, mustard, and pickles.</p>
+                        <p class="price">$5.49</p>
+                        <button class="order-btn" onclick="addToCart('Hot Dog', 5.49)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 11 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Caesar Salad" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Caesar Salad</h3>
+                        <p class="description">Crisp lettuce with creamy Caesar dressing, croutons, and parmesan.</p>
+                        <p class="price">$6.99</p>
+                        <button class="order-btn" onclick="addToCart('Caesar Salad', 6.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 12 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Cheese Sticks" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Cheese Sticks</h3>
+                        <p class="description">Fried cheese sticks served with marinara sauce for dipping.</p>
+                        <p class="price">$5.99</p>
+                        <button class="order-btn" onclick="addToCart('Cheese Sticks', 5.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 13 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Cold Drink" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Cold Drink</h3>
+                        <p class="description">Refresh yourself with a cold fizzy drink, choose from Cola, Lemonade, or Orange.</p>
+                        <p class="price">$2.99</p>
+                        <button class="order-btn" onclick="addToCart('Cold Drink', 2.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 14 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Iced Tea" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Iced Tea</h3>
+                        <p class="description">Chilled iced tea with a hint of lemon, perfect for a hot day.</p>
+                        <p class="price">$2.49</p>
+                        <button class="order-btn" onclick="addToCart('Iced Tea', 2.49)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 15 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Milkshake" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Chocolate Milkshake</h3>
+                        <p class="description">Rich and creamy milkshake made with real chocolate ice cream.</p>
+                        <p class="price">$4.99</p>
+                        <button class="order-btn" onclick="addToCart('Chocolate Milkshake', 4.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 16 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Pasta" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Alfredo Pasta</h3>
+                        <p class="description">Pasta in a rich and creamy Alfredo sauce with chicken or vegetables.</p>
+                        <p class="price">$11.49</p>
+                        <button class="order-btn" onclick="addToCart('Alfredo Pasta', 11.49)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 17 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Soda" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Soda</h3>
+                        <p class="description">Choose from a variety of sodas like Coke, Sprite, Fanta, and more!</p>
+                        <p class="price">$2.49</p>
+                        <button class="order-btn" onclick="addToCart('Soda', 2.49)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 18 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Fruit Juice" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Fresh Fruit Juice</h3>
+                        <p class="description">A refreshing juice made from fresh seasonal fruits.</p>
+                        <p class="price">$3.49</p>
+                        <button class="order-btn" onclick="addToCart('Fresh Fruit Juice', 3.49)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 19 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Sundae" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Vanilla Sundae</h3>
+                        <p class="description">A rich vanilla sundae topped with chocolate or caramel syrup and nuts.</p>
+                        <p class="price">$4.99</p>
+                        <button class="order-btn" onclick="addToCart('Vanilla Sundae', 4.99)">Order Now</button>
+                    </div>
+                </div>
+                <!-- Menu Item 20 -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250" alt="Cold Coffee" class="menu-img">
+                    <div class="menu-details">
+                        <h3>Cold Coffee</h3>
+                        <p class="description">A refreshing cold coffee blended with ice, milk, and a touch of sweetness.</p>
+                        <p class="price">$3.99</p>
+                        <button class="order-btn" onclick="addToCart('Cold Coffee', 3.99)">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cafe Central. All rights reserved.</p>
+    </footer>
+    
+    <script src="menu.js"></script>
+</body>
+</html>

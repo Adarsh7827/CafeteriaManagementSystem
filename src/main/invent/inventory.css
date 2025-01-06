@@ -1,0 +1,156 @@
+/* Color Scheme */
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --accent-color: #ffe66d;
+    --dark-color: #2d3436;
+    --light-color: #f9f9f9;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--dark-color);
+    padding: 10px 0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav .logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a i {
+    margin-right: 5px;
+}
+
+.login-btn a {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.main {
+    padding: 20px;
+}
+
+.inventory-section {
+    padding: 40px 20px;
+    background-color: var(--light-color);
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.inventory-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-item h3 {
+    color: var(--dark-color);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.status-good {
+    color: #2d3436;
+}
+
+.status-warning {
+    color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+    .inventory-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .login-btn a {
+        width: 100%;
+        text-align: center;
+    }
+}

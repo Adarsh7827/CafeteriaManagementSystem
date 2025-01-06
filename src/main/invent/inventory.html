@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Central | Inventory</title>
+    <link rel="stylesheet" href="inventory.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img alt="a chef's hat and kitchen utensils with a ribbon in front of a brick wall" class="logo-img"
+                    src="https://i.pinimg.com/736x/f8/35/19/f83519e2a7759bb0b2e6d492f490bfc8.jpg">
+                <span>Cafe Central</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="home-button">Home</a></li>
+                <li><a href="c:\Users\praso\Desktop\project adarsh\menu\menu.html"><i class="fas fa-utensils"></i>
+                        Menu</a></li>
+                <li><a href="index.html"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+                <li><a href="inventory.html"><i class="fas fa-box"></i> Inventory</a></li>
+                <li><a href="index.html"><i class="fas fa-users"></i> Employees</a></li>
+                <li><a href="#reports"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                <li class="login-btn">
+                    <a href="c:\Users\praso\Desktop\project adarsh\login\login.html" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inventory" class="inventory-section">
+            <h2><i class="fas fa-box"></i> Inventory Management</h2>
+            <div class="inventory-grid">
+                <div class="inventory-item">
+                    <h3>Current Stock</h3>
+                    <table>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Burger Buns</td>
+                            <td>150</td>
+                            <td class="status-good">Good</td>
+                        </tr>
+                        <tr>
+                            <td>Cheese Slices</td>
+                            <td>80</td>
+                            <td class="status-warning">Low</td>
+                        </tr>
+                        <tr>
+                            <td>Tomatoes</td>
+                            <td>100</td>
+                            <td class="status-good">Good</td>
+                        </tr>
+                        <tr>
+                            <td>Plastic Glasses</td>
+                            <td>100</td>
+                            <td class="status-good">Good</td>
+                        </tr>
+                        <tr>
+                            <td>Paper Wrap</td>
+                            <td>120</td>
+                            <td class="status-good">Good</td>
+                        </tr>
+                        <tr>
+                            <td>Straw</td>
+                            <td>200</td>
+                            <td class="status-good">Good</td>
+                        </tr>
+                        <tr>
+                            <td>Cucumber</td>
+                            <td>60</td>
+                            <td class="status-warning">Very Low</td>
+                        </tr>
+                    </table>
+                    <h3>Non Electronic Item</h3>
+                    <table>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Health</th>
+                        </tr>
+                        <tr>
+                            <td>Tables</td>
+                            <td>10</td>
+                            <td class="status-good">Good</td>
+                        </tr>
+                        <tr>
+                            <td>Chair</td>
+                            <td>50</td>
+                            <td class="status-good">Good</td>
+                        </tr>
+                        <tr>
+                            <td>Air Freshner</td>
+                            <td>10</td>
+                            <td class="status-good">Good</td>
+                        </tr>
+                        <tr>
+                            <td>Hand wash</td>
+                            <td>08</td>
+                            <td class="status-warning">Low</td>
+                        </tr>
+                        <tr>
+                            <td>Glass cleaner</td>
+                            <td>02</td>
+                            <td class="status-warning">Very Low</td>
+                        </tr>
+                        <tr>
+                            <td>Curtains</td>
+                            <td>10</td>
+                            <td class="status-good">Clean</td>
+                        </tr>
+                        <tr>
+                            <td>Mats</td>
+                            <td>60</td>
+                            <td class="status-good">Clean</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="inventory-item">
+                    <h3>Ordered Item</h3>
+                    <table>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Burger Buns</td>
+                            <td>150</td>
+                            <td>Delivered Soon</td>
+                        </tr>
+                        <tr>
+                            <td>Cheese Slices</td>
+                            <td>200</td>
+                            <td>Delivered Soon</td>
+                        </tr>
+                        <tr>
+                            <td>Cucumber</td>
+                            <td>200</td>
+                            <td>Delivered Soon</td>
+                        </tr>
+                        <tr>
+                            <td>Onion</td>
+                            <td>150</td>
+                            <td>Delivered soon</td>
+                        </tr>
+                        <tr>
+                            <td>Tomatos</td>
+                            <td>400</td>
+                            <td>Delivered Soon</td>
+                        </tr>
+                        <tr>
+                            <td>Gralic</td>
+                            <td>50</td>
+                            <td>Delivered Soon</td>
+                        </tr>
+                    </table>
+                    <h3>Machinery Status</h3>
+                    <table>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Last Serviced</th>
+                            <th>Next Serviced</th>
+                        </tr>
+                        <tr>
+                            <td>Oven</td>
+                            <td>2</td>
+                            <td>12/12/2024</td>
+                            <td>12/12/2025</td>
+                        </tr>
+                        <tr>
+                            <td>coffee machine</td>
+                            <td>7</td>
+                            <td>12/12/2024</td>
+                            <td>12/06/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Cutlries</td>
+                            <td>20</td>
+                            <td>08/08/2024</td>
+                            <td>08/01/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Grinder</td>
+                            <td>5</td>
+                            <td>08/08/2024</td>
+                            <td>08/01/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Refrigirator</td>
+                            <td>2</td>
+                            <td>12/12/2024</td>
+                            <td>12/12/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Air conditioner</td>
+                            <td>3</td>
+                            <td>12/12/2024</td>
+                            <td>12/12/2025</td>
+                        </tr>
+                        <tr>
+                            <td>Heater</td>
+                            <td>2</td>
+                            <td>12/12/2024</td>
+                            <td>12/12/2025</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cafe Central. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="inventory.js"></script>
+</body>
+
+</html>
